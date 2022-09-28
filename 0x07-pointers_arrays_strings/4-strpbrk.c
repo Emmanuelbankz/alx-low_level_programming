@@ -1,19 +1,29 @@
 #include "main.h"
-#include "2-strlen.c"
+#include <stdio.h>
 
 /**
- * print_rev - reverse a string
+ * *_strpbrk - searches a string for any of a set of bytes
+ * @s: string to search
+ * @accept: stringcontaining the bytes to look for
  *
- * @s: string to print
+ * Return: pointer to the byte in s that matches one of the bytes in accept
+ * or NULL if no such byte is found
  */
-
-void print_rev(char *s)
+char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	for (i = 0; *s != '\0'; i++)
 	{
-		_putchar(*(s + i));
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (*s == accept[j])
+			{
+				return (s);
+			}
+		}
+		s++;
 	}
-	_putchar('\n');
+
+	return (NULL);
 }
