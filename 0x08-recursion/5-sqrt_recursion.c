@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
  * @guess: Iterative Sqrt guess
  * @num: Integer to check for sqrt
  * Return: Sqrt of num if natural
- * 	Or -1 if not natural
+ * Or -1 if not natural
  */
 int _sqrt_check(int guess, int num)
 {
