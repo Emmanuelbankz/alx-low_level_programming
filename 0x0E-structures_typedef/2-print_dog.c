@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-
 /**
  * print_dog - check the code for Holberton School students.
  * @d: pointer
@@ -10,7 +9,7 @@ void print_dog(struct dog *d)
 {
 	if (d)
 	{
-		if (d-name !== NULL)
+		if (d->name != NULL)
 		{
 			printf("Name: %s\n", d->name);
 		}
