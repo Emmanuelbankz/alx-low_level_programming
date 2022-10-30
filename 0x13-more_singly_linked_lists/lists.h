@@ -1,7 +1,6 @@
 #ifndef _LISTS_
 #define _LISTS_
 
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -17,19 +16,6 @@ typedef struct listint_s
 	int n;
 	struct listint_ *nextt;
 }listint_;
-
-/**
- * struct listp_s - singly linked list
- * @p: pointers of nodes
- * @next: points to the next node
- *
- * Description: singly linked list of pointers
- */
-typedef struct listp_s
-{
-	void *p;
-	struct listp_ *next;
-} list_t;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
