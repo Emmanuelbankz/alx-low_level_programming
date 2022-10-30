@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements of a list.
+ * print_listint - prints all the elements of a lst_t ist.
  * @h: head of a list
- * Return: numbers of nodes.
+ * Return: numbers of nodes inbthe list.
  */
 
 size_t print_listint(const listint_t *h)
@@ -16,9 +16,9 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", h->n);/* (*h).n */
 		h = h->next;/* (h).next*/
-		nn++;
+		count++;
 	}
 
-	return (nn);
+	return (count);
 
 }
