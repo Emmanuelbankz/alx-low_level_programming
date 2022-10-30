@@ -1,1 +1,1 @@
-More singly linked listsMore singly linked lists
+more function in singly linked list
